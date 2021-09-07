@@ -1,8 +1,6 @@
-#%global debug_package %{nil}
-
 Name:    ck
 Version: 0.6.0
-Release: 1
+Release: 2
 Summary: Concurrency programming lib
 License: BSD
 URL:	 http://concurrencykit.org/
@@ -26,6 +24,7 @@ Concurrency primitives, safe memory reclamation mechanisms and non-blocking data
 %setup -q -n %{name}-%{version}/
 
 %build
+export CFLAGS="${RPM_OPT_FLAGS}"
 ./configure --libdir=%{_libdir} --includedir=%{_includedir}/%{name} --mandir=%{_mandir} --prefix=%{_prefix}
 %make_build
 
@@ -54,6 +53,9 @@ rm %{buildroot}%{_libdir}/libck.a
 %ldconfig_scriptlets
 
 %changelog
-* Sun Mar 29 2020 Wei Xiong <myeuler@163.com>
+* Tue Sep 07 2021 lingsheng <lingsheng@huawei.com> - 0.6.0-2
+- Set CFLAGS to build debug related rpm
+
+* Sun Mar 29 2020 Wei Xiong <myeuler@163.com> - 0.6.0-1
 - Package init
 
