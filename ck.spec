@@ -1,6 +1,6 @@
 Name:    ck
-Version: 0.6.0
-Release: 2
+Version: 0.7.1
+Release: 1
 Summary: Concurrency programming lib
 License: BSD
 URL:	 http://concurrencykit.org/
@@ -53,6 +53,9 @@ rm %{buildroot}%{_libdir}/libck.a
 %ldconfig_scriptlets
 
 %changelog
+* Mon Sep 13 2021 lishiyangasdf <lishiyangasdf1113@163.com> 
+- Version upgrade
+ 
 * Tue Sep 07 2021 lingsheng <lingsheng@huawei.com> - 0.6.0-2
 - Set CFLAGS to build debug related rpm
 
