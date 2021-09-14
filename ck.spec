@@ -53,7 +53,7 @@ rm %{buildroot}%{_libdir}/libck.a
 %ldconfig_scriptlets
 
 %changelog
-* Mon Sep 13 2021 lishiyangasdf <lishiyangasdf1113@163.com> 
+* Mon Sep 13 2021 lishiyangasdf <lishiyangasdf1113@163.com> - 0.7.1-1
 - Version upgrade
  
 * Tue Sep 07 2021 lingsheng <lingsheng@huawei.com> - 0.6.0-2
